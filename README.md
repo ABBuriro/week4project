@@ -30,9 +30,19 @@ Appropriately labels the data set with descriptive variable names.
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## CODEBOOK
-_Loading packages_
+__Loading packages__
+This section opens the dplyr package from tidyverse
 
-Opening the dplyr package
+__Add data to tables__
+We created a variable for each txt file. We named them exactly as the txt file: features (, activities, subjectest, x_test, y_test, subject_train, x_train, y_train
+
+__Merged data__
+We combined 6 files using rbind() (x_train and x_test into x, y_train and y_test into y,subjects_train and subjects_test into Subjects). These files were combined into a single dataset called onedata using cbind().
+
+__Clean dataset__
+Created a summarized clean data set with mean values using the onedata. This data is summarized into a txt file called cleandata.txt
+
+
 
 
 
