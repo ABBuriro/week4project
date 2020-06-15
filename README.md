@@ -40,7 +40,7 @@ __Merged data__
 We combined 6 files using rbind() (x_train and x_test into x, y_train and y_test into y,subjects_train and subjects_test into Subjects). These files were combined into a single dataset called onedata using cbind().
 
 __Clean dataset__
-Created a summarized clean data set with mean values using the onedata. This data is summarized into a txt file called cleandata.txt
+Created a summarized clean data set with mean and STD values using the onedata. This data is summarized into a txt file called cleandata.txt
 
 
 
